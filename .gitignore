@@ -1,0 +1,8 @@
+config.yaml
+meu_modelo.keras
+objects/*
+!objects/.gitkeep
+selector.joblib
+modelcreation_modified.py
+novadrivebank
+__pycache__
