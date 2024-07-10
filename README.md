@@ -32,7 +32,7 @@ Este projeto oferece uma solução completa para análise de crédito, integrand
    * Linux/macOS: source venv/bin/activate
 3. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/TonFLY/analise_credito_com_appweb.git](https://github.com/TonFLY/analise_credito_com_appweb.git)
+   git clone https://github.com/TonFLY/analise_credito_com_appweb.git
 4. **Instale as Dependências:**
    ```bash
    pip install -r requirements.txt
