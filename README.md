@@ -57,7 +57,7 @@ Este projeto oferece uma solução completa para análise de crédito, integrand
    * Abra o navegador e acesse o endereço indicado no terminal (geralmente `http://localhost:8501` pode variar entre 8501 a 8505).
 ## Demonstração
 
-[Insira aqui um GIF ou imagens da aplicação em funcionamento]
+![USO DO APLICATIVO](https://github.com/TonFLY/images/blob/main/gif.gif?raw=true)
 
 ## Próximos Passos
 
