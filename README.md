@@ -37,8 +37,7 @@ Este projeto é um exercício prático desenvolvido para aprimorar minhas habili
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/TonFLY/analise_credito_com_appweb.git](https://github.com/TonFLY/analise_credito_com_appweb.git)
-
+   git clone https://github.com/TonFLY/analise_credito_com_appweb.git
    
 2. **Crie um ambiente virtual (venv):**
    ```bash
