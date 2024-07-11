@@ -1,0 +1,9 @@
+database_config:
+  dbname: 'novadrivebank'
+  user: 'etlreadonlybank'
+  password: 'novadrive376A@'
+  host: '159.223.187.110'
+
+url_api:
+   url: 'http://127.0.0.1:5000/predict'
+   
