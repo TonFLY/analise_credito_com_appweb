@@ -23,25 +23,30 @@ Este projeto oferece uma solução completa para análise de crédito, integrand
 ## Como Executar o Projeto
 
 **Recomendamos o uso de um ambiente virtual para evitar conflitos de dependências:**
-
-1. **Crie um ambiente virtual (venv):**
-   ```bash
-   python -m venv venv
-2. **Ative o ambiente virtual:**
-   * Windowns: venv\Scripts\activate
-   * Linux/macOS: source venv/bin/activate
-3. **Clone o repositório:**
+1. **Clone o repositório:**
    ```bash
    git clone https://github.com/TonFLY/analise_credito_com_appweb.git
+
+* abra a pasta do projeto no seu editor de codigo.
+* abra o terminal integrado ou de sua preferencia.
+   
+2. **Crie um ambiente virtual (venv):**
+   ```bash
+   python -m venv `apelido`
+   
+3. **Ative o ambiente virtual:**
+   * Windowns: `apelido`\Scripts\activate
+   * Linux/macOS: source `apelido`/bin/activate
+
 4. **Instale as Dependências:**
    ```bash
    pip install -r requirements.txt
 5. **Configure o Banco de Dados (PostgreSQL):**
-   *
-   *
+   * Não é uma boa praticar coloca os arquivos com login e senha do banco de dados.
+   * Aqui deixei pois os dados são ficticios e didaticos.
 6. **Exercute a aplicação:**
    ```bash
-   streamlit app.py
+   python -m streamlit run .\webapp.py
 7. **Acesse a interface Web:**
    * Abra o navegador e acesse o endereço indicado no terminal (geralmente `http://localhost:8501`).
 ## Demonstração
