@@ -44,11 +44,17 @@ Este projeto oferece uma solução completa para análise de crédito, integrand
 5. **Configure o Banco de Dados (PostgreSQL):**
    * Não é uma boa praticar coloca os arquivos com login e senha do banco de dados.
    * Aqui deixei pois os dados são ficticios e didaticos.
+6. **Execute o modelo de machine learning**
+   ```bash
+   python .\modelcreation.py
+7. **Execute a API**
+   ```bash
+   python .\api.py
 6. **Exercute a aplicação:**
    ```bash
    python -m streamlit run .\webapp.py
 7. **Acesse a interface Web:**
-   * Abra o navegador e acesse o endereço indicado no terminal (geralmente `http://localhost:8501`).
+   * Abra o navegador e acesse o endereço indicado no terminal (geralmente `http://localhost:8501` pode variar entre 8501 a 8505).
 ## Demonstração
 
 [Insira aqui um GIF ou imagens da aplicação em funcionamento]
