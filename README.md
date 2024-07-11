@@ -30,8 +30,7 @@ Este projeto é um exercício prático desenvolvido para aprimorar minhas habili
 
 **Requisitos:**
 
-* Python 3.x
-* PostgreSQL
+* Python 3.12.4
 * Bibliotecas listadas no arquivo `requirements.txt`
 
 **Passos:**
