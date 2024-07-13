@@ -49,7 +49,7 @@ Este projeto é um exercício prático desenvolvido para aprimorar minhas habili
    ```bash
    pip install -r requirements.txt
 4. **Configure o Banco de Dados (PostgreSQL):**
-   * `config.yaml` ja contem a configuração não é uma boa pratica deixar disponivel porém por um banco de dados ficticio e didatico estará disponivel
+   * `config.yaml` ja contem a configuração não é uma boa pratica deixar disponivel porém por ser um banco de dados ficticio e didatico estará disponivel
 5. **Execute o modelo de machine learning**
    ```bash
    python modelcreation.py
