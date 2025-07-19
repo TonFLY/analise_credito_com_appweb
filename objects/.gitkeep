@@ -1,0 +1,6 @@
+# Esta pasta armazena os modelos treinados e transformadores
+# Arquivos gerados durante o treinamento:
+# - meu_modelo.keras (modelo de rede neural)
+# - scaler*.joblib (normalizadores para variáveis numéricas)
+# - labelencoder*.joblib (codificadores para variáveis categóricas) 
+# - selector.joblib (seletor de features RFE)

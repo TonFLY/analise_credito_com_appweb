@@ -1,7 +1,82 @@
 
-meu_modelo.keras
+# Modelos e artifacts de ML
+*.keras
+*.h5
+*.joblib
+*.pkl
+*.pickle
+objects/*.joblib
+objects/*.keras
+objects/*.pkl
 !objects/.gitkeep
-selector.joblib
+
+# Arquivos de configuração específicos
 modelcreation_modified.py
 novadrivebank
-__pycache__
+
+# Ambientes Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Logs e dados temporários
+logs/
+*.log
+.logs/
+temp/
+tmp/
+
+# Arquivos de configuração sensíveis
+.env
+.env.local
+.env.prod
+config_prod.yaml
+secrets.yaml
+
+# IDE e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks (checkpoints)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Dados sensíveis
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+!example_data.json
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
