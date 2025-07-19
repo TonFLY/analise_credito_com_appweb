@@ -1,66 +1,58 @@
 # 🏦 Análise de Crédito com Aplicação Web
 
-Uma aplicação completa de Machine Learning para análise de risco de crédito, implementada com arquitetura em 3 camadas: banco de dados PostgreSQ### **🐳 Execução com Docker (Recomendado para Produção)**
+Uma aplicação completa de Machine Learning para análise de risco de crédito, implementada com arquitetura em 3 camadas: banco de dados PostgreSQ### **� Opções de Deploy**
 
-#### **Pré-requisitos Docker:**
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado
-- 4GB RAM disponível para containers
-- 2GB espaço em disco
-
-#### **Setup Automático com Docker:**
+#### **📱 Deploy Local (Desenvolvimento)**
 ```powershell
-# Verificar se Docker está funcionando
-python docker-manager.py check
+# Deploy local rápido (sem Docker)
+python local-deploy.py local
 
-# Setup completo automático (build + start + health check)
-python docker-manager.py full
+# Deploy local com Docker
+python local-deploy.py docker
 
-# Ou manualmente:
-docker-compose build
-docker-compose up -d
-
-# Verificar status dos serviços
-python docker-manager.py health
+# Apenas verificar requisitos
+python local-deploy.py check
 ```
 
-#### **Gerenciamento de Containers:**
+#### **☁️ Deploy Azure VM (Produção Completa)**
 ```powershell
-# Parar todos os serviços
-python docker-manager.py stop
-# ou
-docker-compose down
+# Deploy completo com VM, Docker e todos os serviços
+python azure-deploy.py deploy
 
-# Reiniciar serviços
-python docker-manager.py restart
+# Ver informações de acesso
+python azure-deploy.py info
 
-# Ver logs em tempo real
-python docker-manager.py logs
-# ou
-docker-compose logs -f
-
-# Verificar saúde dos serviços
-python docker-manager.py health
+# Remover recursos (evitar custos)
+python azure-deploy.py cleanup
 ```
 
-#### **Acessar Aplicações Docker:**
-- 🏦 **App Principal**: http://localhost:8501
-- 📊 **Dashboard**: http://localhost:8502  
-- 🔌 **API Health**: http://localhost:5000/health
+#### **⚡ Deploy Azure Container Instances (Rápido e Econômico)**
+```powershell
+# Deploy em containers Azure (mais barato)
+python azure-aci-deploy.py deploy
 
-#### **Arquitetura Docker:**
+# Ver status
+python azure-aci-deploy.py info
+
+# Limpar recursos
+python azure-aci-deploy.py cleanup
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   API Container │    │Streamlit Container│    │Dashboard Container│
-│   Port: 5000    │────│   Port: 8501     │    │   Port: 8502     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                                 │
-                        ┌─────────────────┐
-                        │ credit_network  │
-                        │   (Bridge)      │
-                        └─────────────────┘
-``` com modelo de rede neural, e interface web Streamlit.
+
+#### **🔄 CI/CD com GitHub Actions**
+- **Push automático**: Triggers deploy ao fazer push na main
+- **Testes automáticos**: Executados antes do deploy
+- **Deploy Azure**: Automático para Azure Container Instances
+- **Monitoramento**: Testes de carga e segurança
+
+**Configuração GitHub Actions:**
+1. Configure secrets no repositório:
+   - `AZURE_CREDENTIALS`
+   - `REGISTRY_LOGIN_SERVER`
+   - `REGISTRY_USERNAME` 
+   - `REGISTRY_PASSWORD`
+   - `RESOURCE_GROUP`
+
+2. Push para `main` = Deploy automático! 🎉 com modelo de rede neural, e interface web Streamlit.
 
 ## 📋 Descrição do Projeto
 
