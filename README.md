@@ -171,7 +171,7 @@ Este projeto implementa um sistema completo de análise de crédito que simula o
     ├── 🧪 test_utils.py     # Testes das funções utilitárias
     ├── 🔌 test_api.py       # Testes da API
     └── 📊 test_prediction.py # Testes de predição integrada
-```
+
 ├── 📁 logs/                 # 🆕 Logs do sistema
 │   ├── 📋 app.log           # Log geral da aplicação
 │   ├── 📊 predictions.log   # Log de predições
